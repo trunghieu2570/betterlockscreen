@@ -87,13 +87,14 @@ lock() {
 
 	i3lock \
 		-t -i "$1" \
-		--timepos='x+110:h-70' \
-		--datepos='x+43:h-45' \
+		--timepos='x+110:h-50' \
+		--datepos='x+43:h-32' \
+		--datesize=11 \
 		--clock --date-align 1 --datestr "$locktext" \
 		--insidecolor=$insidecolor --ringcolor=$ringcolor --line-uses-inside \
 		--keyhlcolor=$keyhlcolor --bshlcolor=$bshlcolor --separatorcolor=$separatorcolor \
 		--insidevercolor=$insidevercolor --insidewrongcolor=$insidewrongcolor \
-		--ringvercolor=$ringvercolor --ringwrongcolor=$ringwrongcolor --indpos='x+280:h-70' \
+		--ringvercolor=$ringvercolor --ringwrongcolor=$ringwrongcolor --indpos='x+220:h-55' \
 		--radius=20 --ring-width=4 --veriftext='' --wrongtext='' \
 		--verifcolor="$verifcolor" --timecolor="$timecolor" --datecolor="$datecolor" \
 		--time-font="$font" --date-font="$font" --layout-font="$font" --verif-font="$font" --wrong-font="$font" \
